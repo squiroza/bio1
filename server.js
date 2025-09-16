@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: "10mb" }));
 // Conexión PostgreSQL
 const pool = new Pool({
   user: "squiroz",
-  host: "0.tcp.ngrok.io:13709",
+  host: "6.tcp.ngrok.io:19721",
   database: "empleadosdb",
   password: "Atinale1",
   port: 5432,
@@ -48,3 +48,4 @@ app.post("/api/empleados", async (req, res) => {
 app.listen(3000, () => {
   console.log("Servidor corriendo en http://localhost:3000");
 });
+
